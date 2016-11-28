@@ -1,0 +1,120 @@
+body.open {
+  overflow: hidden;
+  background-color: white;
+}
+body:before {
+  content: "";
+  position: fixed;
+  background-color: white;
+  color: black;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+body.open:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.burger {
+  position: fixed;
+  top: 17px;
+  left: 10px;
+  display: none;
+  height: 40px;
+  &__button {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    &.open {
+      box-shadow: none;
+      color: black;
+      .burger__button__icon{ 
+        background: transparent;
+        &:before, &:after {
+          background: black;
+          transform-origin: 0 50%;
+          width: 28.28427125px;
+        }
+        &:before {
+         transform: rotateZ(0.78539816rad);
+        }
+        &:after {
+          transform: rotateZ(-0.78539816rad);
+        }
+      }
+    }
+    &__icon {
+      display: inline-block;
+      position: absolute;
+      background: #fff;
+      margin: 0 auto;
+      width: 20px;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transition: all 0.5s ease;
+      transform: translateY(-1px);
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        background: #fff;
+        width: 20px;
+        height: 2px;
+        left: 0;
+        right: 0;
+        transition: all 0.5s ease;
+      }
+      &:before {
+        bottom: 10px;
+      }
+      &:after {
+        top: 10px;
+      }
+    }
+  }
+  &__menu {
+    list-style-type: none;
+    padding: 0 0 0 20px;
+    li {
+      display: block;
+      position: relative;
+      margin: 15px 0;
+      visibility: hidden;
+      transition: all 0.5s ease;
+      transform: translateX(-400px);
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      font-family: Arial, "san-serif";
+      font-weight: normal;
+      transition: all 0.4s ease;
+      border-left: 3px solid transparent;
+      padding-left: 0;
+      &:hover {
+        padding-left: 30px;
+        border-left: 3px solid $sky;
+      }
+    }
+  }
+}
+
+.burger__button.open + .burger__menu li {
+  transform: translateX(0);
+  visibility: visible;
+}
+

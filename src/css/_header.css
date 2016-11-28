@@ -1,0 +1,297 @@
+.header {
+	padding-top: 50px;
+	width: 100px;
+	align-items: center;
+	min-height: 800px;
+	width: 100%;
+	background: black;
+	background: url('../images/first-scroll-waves-bg.svg') repeat-y;
+	background-size: cover;
+	background-position: top left;
+	&__logo {
+		background: url('../images/vr-logo-white.svg') no-repeat;
+		min-width: 90px;
+		height: 50px;
+		background-size: cover;
+	}
+	&__nav.container {
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+		margin: 0 auto;
+		ul {
+			padding: 0;
+			margin: 0;
+    		align-items: center;
+			li {
+				list-style: none;
+				color: white;
+				a {
+					display: inline-block;
+					font-size: 20px;
+  					font-family: MuseoSans500;
+  					margin-left: 50px;
+  					font-weight: 500;
+  					&:hover {
+						color: $sky;
+					    transition: color 0.5s ease;
+					}
+  					&.header__buy-button {
+  						font-family: MuseoSans700;
+						padding: 14px;
+						border: 1px solid white;
+						&:hover {
+							border: 1px solid $sky;
+						}
+  					}
+				}
+			}
+		}
+	}
+	&__title {
+		margin: 130px 0;
+		margin-bottom: 40px;
+		h1 {
+			font-family: FentonBlack;
+			font-size: 120px;
+			margin-top: 65px;
+			span  {
+				color: $sky;
+			}			
+		}
+		p {
+			font-family: MuseoSans500;
+			font-size: 30px;
+			margin: 5px 0;
+
+		}
+	}
+	&__footer {
+		width: 100%;
+		justify-content: space-between;
+		.social-icon {
+			margin-right: 40px;
+			
+		}
+		.languages {
+			font-family: MuseoSans500;
+			font-size: 24px;
+			a {
+				margin-left: 40px;
+				&:hover {
+					color: $sky;
+				    transition: color 0.5s ease;
+				}
+				&.active {
+					color: $sky;
+				}
+			}
+		}
+	}	
+}
+
+@media screen and (max-width: 1210px) {
+	.header {
+		&__nav.container {
+			ul {
+				li {
+					a {
+						font-size: 18px;
+	  					margin-left: 40px;
+	  					&:hover {
+							color: $sky;
+						    transition: color 0.5s ease;
+						}
+						&.header__buy-button {
+							padding: 10px;
+	  					}
+					}
+				}
+			}
+		}
+		&__title {
+			margin: 100px 0;
+			margin-bottom: 50px;
+			h1 {
+				font-size: 90px;
+				margin-top: 55px;		
+			}
+			p {
+				font-size: 24px;
+			}
+		}
+		&__footer {
+			.languages {
+				font-size: 20px;
+				a {
+					margin-left: 30px;
+				}
+			}
+		}	
+	}
+}
+
+
+@media screen and (max-width: 1040px) {
+	.header {
+		&__nav.container {
+			ul {
+				li {
+					a {
+						font-size: 18px;
+	  					margin-left: 25px;
+						&.header__buy-button {
+							padding: 10px;
+	  					}
+					}
+				}
+			}
+		}
+		&__footer {
+			.languages {
+				font-size: 18px;
+			}
+		}	
+	}
+}
+
+
+@media screen and (max-width: 850px) {
+	.header {
+		min-height: 400px;
+		&__nav.container {
+			ul.flex, .header__logo  {
+				display: none;
+			}
+		}
+		.burger {
+			display: block;
+			li {
+				a {
+					font-family: MuseoSans500;
+					font-size: 28px;
+					margin-top: 40px;
+				}
+			}
+			.burger__menu {
+				.header__footer .languages {
+					display: block;
+		  			margin-top: 80px;
+			  		a {
+					    margin-left: 0;
+					    display: inline-block;
+					    margin-right: 15px; 
+				    	border: none;
+					    border-color: white;
+					    border-width: 0;
+					    &:hover {
+					    	 border: none;
+					    	 padding-left: 0px;
+					    	 border-color: white;
+					    	 border-width: 0;
+					    }
+					}
+				}
+				a {
+					&.header__buy-button {
+						font-family: MuseoSans700;
+						padding: 5px 20px;
+						border: 1px solid $sky;
+						color: $sky;
+						&:hover {
+							border: 1px solid black;
+							color: black;
+						}
+					}
+				}
+			}
+		}
+		
+		&__footer {
+			margin-top: 0;
+			justify-content: center;
+			.languages {
+				display: none;
+			}
+		}
+		&__title {
+			margin: 60px 0;
+			margin-bottom: 50px;
+			h1 {
+				font-size: 74px;
+				margin-top: 55px;		
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.header {
+		min-height: 500px;
+		&__title {
+			margin: 20px 0;
+			margin-bottom: 50px;
+			h1 {
+				font-size: 60px;
+				margin-top: 45px;		
+			}
+		}
+		.burger {
+			display: block;
+			li {
+				a {
+					font-family: MuseoSans500;
+					font-size: 20px;
+					margin-top: 30px;
+				}
+			}
+		}
+		&__footer {
+			.social-icon {
+				margin-right: 30px;
+				width: 30px;
+				height: 30px;
+				&.vk {
+			   	 background-position: 0px 0px;
+			    }
+			  	&.fb {
+			   	  background-position: -50px 0px;
+			  	}
+			  	&.inst {
+			   	  background-position: -99px 0px;
+			    }
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 525px) {
+	.header {
+		min-height: 300px;
+		&__title {
+			margin: 100px 0;
+			margin-bottom: 50px;
+			h1 {
+				font-size: 40px;
+				margin-top: 35px;		
+			}
+		}
+		&__footer {
+			margin-top: 0;
+			justify-content: center;
+		}
+	}
+}
+@media screen and (max-width: 370px) {
+	.header {
+		&__title {
+			margin: 60px 0;
+			margin-bottom: 30px;
+			h1 {
+				font-size: 33px;
+				margin-top: 35px;		
+			}
+		}
+	}
+}

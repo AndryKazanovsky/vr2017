@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width">
+      <title>VR Conference</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBaaDQduFqdSTeLvze4Z_k0W52_B7wEuUI"></script>  
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body onload="initialize()">
+      <header class='flex header'>
+         <nav class='flex row container header__nav'>
+            <a href="#" class="header__logo"></a>
+            <ul class="flex row">
+               <li><a href="#about">About</a></li>
+               <li><a href="#speakers">Speakers</a></li>
+               <li><a href="#schedule">Schedule</a></li>
+               <li><a href="#partners">Partners</a></li>
+               <li><a href="#contacts">Contacts</a></li>
+               <li><a href="#tickets" class="header__buy-button">BUY TICKETS</a></li>
+            </ul>
+            
+         </nav>
+         <div class="burger">
+           <a href="#" class="burger__button" id="burger-button">
+             <span class="burger__button__icon"></span>
+           </a>
+           <ul class="burger__menu">
+               <li><a href="#about">About</a></li>
+               <li><a href="#speakers">Speakers</a></li>
+               <li><a href="#schedule">Schedule</a></li>
+               <li><a href="#partners">Partners</a></li>
+               <li><a href="#contacts">Contacts</a></li>
+               <li><a href="#tickets" class="header-buy-button">BUY TICKETS</a></li>
+               <li class="header__footer">
+                  <p class="languages">
+                     <a href="">Rus</a>
+                     <a href="">Ukr</a>
+                     <a href="" class="active">Eng</a>
+                  </p> 
+               </li>
+           </ul>
+         </div>
+         <div class="header__title">
+            <p>November 19</p>
+            <p>Kyiv, Uritskogo str. 1a</p>
+            <h1><span>VR</span> CONFERENCE</h1>
+         </div>
+         <div class="container flex row header__footer">
+            <p>
+               <a href="" class="social-icon vk"></a>
+               <a href="" class="social-icon fb"></a>
+               <a href="" class="social-icon inst"></a>
+            </p> 
+            <p class="languages">
+               <a href="">Rus</a>
+               <a href="">Ukr</a>
+               <a href="" class="active">Eng</a>
+            </p> 
+         </div>
+      </header>
+      <main>
+         <section class='container about' id='about'>
+          <h3>About</h3>
+          <div class="flex row about__blocks">
+             <div>
+                <p class="about-icon reality">
+                <p>Virtual reality</p>
+                <span>Virtual realities artificially create sensory experiences, which can include sight, touch, hearing, and, less commonly, smell.</span>
+             </div>
+             <div>
+                <p class="about-icon lectures">
+                <p>Interecting lectures</p>
+                <span>Virtual realities artificially create sensory experiences, which can include sight, touch, hearing, and, less commonly, smell.</span>
+             </div>
+             <div>
+                <p class="about-icon fun">
+                <p>Lot of fun</p>
+                <span>Virtual realities artificially create sensory experiences, which can include sight, touch, hearing, and, less commonly, smell.</span>
+             </div>
+          </div>
+          
+         </section>
+         <section class='container speakers' id='speakers'>
+          <h3>Speakers</h3>
+          <div class="flex row speakers__blocks">
+            <div>
+               <img src="images/speakers/speaker-1.png" alt="">
+               <p>Max Shirko</p>
+               <span>Art-director at  The 23 design studio</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-2.png" alt="">
+               <p>Kira Laktionov</p>
+               <span>UX Designer at Cogniance;<br />teacher at Projector</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-3.png" alt="">
+               <p>Kate Keglyn</p>
+               <span>Chief editor at Projector</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-4.png" alt="">
+               <p>Max Shirko</p>
+               <span>Art-director at  The 23 design studio</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-5.png" alt="">
+               <p>Max Shirko</p>
+               <span>Art-director at  The 23 design studio</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-6.png" alt="">
+               <p>Max Shirko</p>
+               <span>Art-director at  The 23 design studio</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-7.png" alt="">
+               <p>Max Shirko</p>
+               <span>Art-director at  The 23 design studio</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-8.png" alt="">
+               <p>Max Shirko</p>
+               <span>Art-director at  The 23 design studio</span>
+            </div>
+            <div>
+               <img src="images/speakers/speaker-9.png" alt="">
+               <p>Max Shirko</p>
+               <span>Art-director at  The 23 design studio</span>
+            </div>
+          </div>
+         </section>
+         <section class="schedule__block">
+            <div class="container schedule">
+               <h3 id='schedule'>Schedule</h3>
+               <div class="schedule__list">
+                  <div>
+                     <span class="time">10:00</span>
+                     <div>
+                        <span class="blue">Registration</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">11:00</span>
+                     <div>
+                        <span class="blue">Opening</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">12:00</span>
+                     <div>
+                        <h3>Towards Reusable VR Frameworks: an introduction using Simulator X</h3>
+                        <span>Max Shirko, Art-director at The 23 design studio</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">13:00</span>
+                     <div>
+                        <h3>Human-Centered Design for Immersive Interactions</h3>
+                        <span>Kira Laktionov, UX Designer at Cogniance; teacher at Projector</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">14:00</span>
+                     <div>
+                        <span class="blue">Break</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">15:00</span>
+                     <div>
+                        <h3>Embodied Learning through Virtual & Augmented Reality </h3>
+                        <span>Kate Keglyn, Chief editor at Projector</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">16:00</span>
+                     <div>
+                        <h3>Optical See-Through AR Calibration: Methods <br />for Current & NextGeneration Head-Mounted Displays</h3>
+                        <span>Pavlo Grozyan, Product Designer at Grammarly; Co-Founder/Product Designer at Jerrycan</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">17:00</span>
+                     <div>
+                        <h3>VR and AR best practices for games and applications using the Unity Engine</h3>
+                        <span>Mikhail Ribachuk, Owner of VR-Guida</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">18:00</span>
+                     <div>
+                        <h3>Eye Tracking in Desktop VR: Data Synchronization, Capture, Visualization, and Analysis</h3>
+                        <span>Olga Shevchenko Art-director at Vintage Web Production</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">19:00</span>
+                     <div>
+                        <h3>Affordances in Immersive and Mixed Virtual Reality: Design Importance and Open Questions</h3>
+                        <span>Eugene Kudriavchenko, Director at Vintage Web Production</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">20:00</span>
+                     <div>
+                        <h3>Cyberarcheology – Issues and Opportunities with virtual reality for a traditional humanities discipline </h3>
+                        <span>Andrey Klen Co-Founder & CDO at Petcube</span>
+                     </div>
+                  </div>
+                  <div>
+                     <span class="time">21:00</span>
+                     <div>
+                        <h3>Methods for Current & NextGeneration Head-Mounted Displays</h3>
+                        <span>Marko Ivanyk, Graphic Designer at Akademia design house</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="container tickets" id='tickets'>
+            <h3>Tickets</h3>
+            <div class="flex row">
+               <div class="ticket">
+                  <div class="ticket__body">
+                     <div class="ticket__view flex">
+                        <p class="type">EXPO ZONE</p>
+                        <p>
+                           <img src="images/399.png" alt="">
+                            <img src="images/UAH-icon.svg" alt="" class="grn">
+                           <p class="date">till October 25</p>
+                        </p>
+                        <p class="description">
+                           <span>expo zone</span>
+                           <span>food zone</span>
+                           <span>bar zone</span>
+                        </p>
+                        <a href="">BUY TICKETS</a>
+                     </div>
+                     
+                  </div>
+                  <p class="ticket__description">
+                     From Oct 26 ticket will cost 499<sup>&#8372</sup> <br />On Nov 18 the prise of ticket will rise to 599<sup>&#8372</sup>
+                  </p>
+               </div>
+               <div class="ticket">
+                  <div class="ticket__body">
+                     <div class="ticket__view flex">
+                        <p class="type">LECTURES ZONE</p>
+                        <p>
+                           <img src="images/1299.png" alt="">
+                           <img src="images/UAH-icon.svg" alt="" class="grn">
+                            <p class="date">till October 25</p>
+                        </p>
+                        <p class="description">
+                           <span>expo zone</span>
+                           <span>food zone</span>
+                           <span>bar zone</span>
+                           <span>lectures</span>
+                           <span>partners</span>
+                        </p>
+                        <a href="">BUY TICKETS</a>
+                     </div>
+                     
+                  </div>
+                  <p class="ticket__description">
+                     From Oct 26 ticket will cost 1499<sup>&#8372</sup> <br />On Nov 18 the prise of ticket will rise to 1999<sup>&#8372</sup>
+                  </p>
+               </div>
+            </div>
+         </section>
+         <section class="container logos" id='partners'>
+            <h3>Organizers</h3>
+            <div class="flex row">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+            </div>
+            <h3>Sponsors & Partners</h3>
+            <div class="flex row">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+               <img src="images/logo-1.png" alt="">
+               <img src="images/logo-2.png" alt="">
+            </div>
+         </section>
+         <section class="container contacts" id='contacts'>
+            <h3>Contacts</h3>
+            <div class="flex row contacts__block">
+               <div>
+                  <p>Phone no.</p>
+                  <a href="tel:+380 63 117 12 23">+380 63 117 12 23</a>
+               </div>
+               <div>
+                  <p>Send us an email</p>
+                  <a href="mailto:info@vrconf.com">info@vrconf.com</a>
+               </div>
+               <div>
+                  <p>Follow us</p>
+                  <p class="footer-icons">
+                     <a href="" class="social-icon vk"></a>
+                     <a href="" class="social-icon fb"></a>
+                     <a href="" class="social-icon inst"></a>
+                  </p>
+               </div>
+               <form action="">
+                  <p>Get the latest news & updates</p>
+                  <input type="email" placeholder="Enter your email" required>
+                  <button>></button>
+               </form>
+            </div>
+         </section>
+        <div id="map"></div>
+       </main>
+       <script src='js/map.js'></script>
+       <script src='js/burger.js'></script>
+   </body>
+</html>

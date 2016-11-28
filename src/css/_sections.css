@@ -1,0 +1,636 @@
+section {
+	&.about {
+		margin-top: 70px;
+		.about__blocks {
+			justify-content: space-between;
+			div {
+				max-width: 280px;
+				p {
+					font-family: MuseoSans900;
+					font-size: 30px;
+				}
+				span {
+  					font-family: MuseoSans100;
+					font-size: 24px;
+				}
+			}
+		}
+		.about-icon {
+			background: url(../images/about-block-icons.svg) no-repeat;
+			min-width: 71px;
+			width: 71px;
+			height: 45px;
+			background-size: cover;		
+			&.reality {
+				background-position: 0px 0px;
+			}
+			&.lectures {
+				background-position: -91px 0px;
+			}
+			&.fun {
+				background-position: -182px 0px;
+			}
+		}
+	}
+	&.speakers {
+		.speakers__blocks {
+			flex-wrap: wrap;
+			div {
+				max-width: 200px;
+				margin-right: 45px;
+				margin-bottom: 90px;
+				img {
+					width: 200px;
+					height: 200px;
+					margin-bottom: 30px;
+				}
+				p {
+					font-family: MuseoSans900;
+					font-size: 21px;
+				}
+				span {
+					font-family: MuseoSans100;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	&.schedule__block {
+		background: url('../images/schedule-waves-bg.svg') repeat-y;
+		background-size: cover;
+		background-position: top left;
+		min-height: 2500px;
+		margin-top: -600px;
+		div.container {
+			padding-top: 700px;
+			h3 {
+				/*padding-top: 100px;*/
+			}
+			.schedule__list {
+				.time, span {
+					font-family: MuseoSans100;
+					font-size: 18px;
+					display: inline-block;
+				}
+				.time {
+					vertical-align: top;
+					width: 15%;
+				}
+				.blue {
+					color: $sky
+				}
+				div {
+					div {
+						display: inline-block;
+						max-width: 910px;
+						margin-bottom: 60px;
+						width: 84%;
+					}
+					h3 {
+						font-family: MuseoSans900;
+						font-size: 26px;
+						margin-top: -10px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	&.tickets.container {
+		background: url('../images/tickets-waves-bg.svg') repeat-y;
+		background-size: cover;
+		min-height: 850px;
+		margin-top: 110px;
+		padding-top: 70px;
+		.row {
+			justify-content: center;
+			flex-wrap: wrap;
+			.ticket {
+				&:first-child {
+					.ticket__body {
+						.ticket__view {
+							.description {
+								margin-bottom: 48px;
+							}
+						}
+					}
+				}
+				margin: 30px 50px;
+				.ticket__body {
+					padding: 25px;
+					background: #1794cf;
+					height: 520px;
+					.ticket__view {
+						background: #1794cf;
+						border: 1px solid white;
+						padding: 35px 60px 25px 60px;
+						text-align: center;
+						height: 470px;
+						max-height: 470px;	
+					    p {
+					    	margin: 0;
+					    }
+						.type {
+							font-family: MuseoSans500;
+							font-size: 24px;
+							font-weight: 500;
+							text-transform: uppercase;
+						}
+						img {
+							margin-top: 50px;
+							margin-bottom: 15px;
+
+						}
+						.date {
+							font-family: MuseoSans100;
+							font-size: 18px;
+							margin-bottom: 30px;
+						}
+						.grn {
+							height: 30px;
+							width: 24px;
+							vertical-align: top;
+						    position: relative;
+    						top: -8px;
+						}
+						.description {
+							span {
+								font-family: MuseoSans500;
+								font-size: 20px;
+								display: block;
+							}
+						}
+						a {
+							font-family: MuseoSans900;
+							font-size: 21px;
+							color: #1794cf;
+							display: block;
+							background: white;
+							padding: 9px 25px;
+							margin-top: 40px;
+							&:hover {
+								color: black;
+							    transition: color 0.5s ease;
+							}
+						}
+					}
+				}
+				.ticket__description {
+					font-family: MuseoSans100;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	&.logos {
+		h3:last-of-type {
+			margin-top: 110px;
+		}
+		div.flex {
+			flex-wrap: wrap;
+			img {
+				margin-right: 45px;
+				margin-bottom: 45px; 
+				height: 200px;
+				width: 200px;
+			}
+		}
+	}
+	&.contacts {
+		margin-bottom: 100px;
+		.contacts__block {
+			justify-content: space-between;
+			flex-wrap: wrap;
+			p {
+				font-family: MuseoSans100;
+				font-size: 18px;
+				margin-bottom: 10px;
+				&.footer-icons {
+					margin: 0;
+				}
+				.social-icon {
+					margin-right: 10px;
+					height: 30px;
+					width: 30px;
+					&.fb {
+						background-position: -50px 0;
+					}
+					&.inst {
+						background-position: -98px 0;
+					}
+				}
+			}
+			a {
+				font-family: MuseoSans900;
+				font-size: 24px;
+				&:hover {
+					color: $sky;
+				    transition: color 0.5s ease;
+				}
+			}
+			input {
+				border: 1px solid white;
+				background: black;
+				color: white;
+				height: 30px;
+				width: 255px;
+				padding: 0 10px;
+				vertical-align: bottom;
+				font-family: MuseoSans500;
+				font-size: 18px;
+				&:hover {
+					border: 1px solid $sky;
+				}
+			}
+			button {
+				margin-left: -4px;
+				height: 30px;
+				border: 1px solid white;
+				color: black;
+				background: white;
+				width: 33px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	section {
+		&.about {
+			.about__blocks {
+				flex-direction: column;
+				div {
+					margin-bottom: 50px;
+					max-width: 500px;
+					span {
+						font-size: 18px;
+					}
+					p {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+		&.contacts {
+			.contacts__block {
+				flex-wrap: wrap;
+				div, form {
+					width: 50%;
+					margin-bottom: 40px;
+				}
+			}
+			padding-bottom: 0;
+		}
+		&.schedule__block {
+			div.container {
+				.schedule__list {
+					div {
+						div {
+							margin-bottom: 60px;
+						}
+						h3 {
+							font-size: 24px;
+						}
+						span {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+		&.logos {
+			div.flex {
+				img {
+					height: 150px;
+					width: 150px;
+				}
+			}
+		}
+		&.schedule__block {
+		    margin-top: -700px;
+		}
+		&.tickets.container {
+			background: url('../images/tickets-waves-bg.svg') repeat-y;
+			background-size: cover;
+			min-height: 850px;
+			margin-top: 110px;
+			padding-top: 70px;
+			.row {
+				justify-content: center;
+				flex-wrap: wrap;
+				.ticket {
+					&:first-child {
+						.ticket__body {
+							.ticket__view {
+								.description {
+									margin-bottom: 48px;
+								}
+							}
+						}
+					}
+					margin: 30px 30px;
+					.ticket__body {
+						padding: 25px;
+						height: 460px;
+						.ticket__view {
+							padding: 25px 30px 20px 30px;
+							height: 410px;
+							max-height: 410px;	
+						    justify-content: space-between;
+							.type {
+								font-size: 20px;
+							}
+							img {
+								margin-top: 50px;
+								margin-bottom: 15px;
+							}
+							.date {
+								font-size: 15px;
+								margin-bottom: 20px;
+							}
+							.grn {
+								height: 30px;
+								width: 24px;
+							    position: initial;
+	    						top: -8px;
+							}
+							.description {
+								span {
+									font-size: 16px;
+								}
+							}
+							a {
+								font-size: 18px;
+								padding: 9px 25px;
+								margin-top: 30px;
+							}
+						}
+					}
+					.ticket__description {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+	section {
+		&.about {
+			.about__blocks {
+				flex-direction: column;
+				/*align-items: center;*/
+				div {
+					margin-bottom: 70px;
+					max-width: 100%;
+
+					p {
+						font-size: 26px;
+					}
+					span {
+						max-width: 90%;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		&.contacts {
+			.contacts__block {
+				flex-wrap: wrap;
+				div, form {
+					width: 100%;
+					margin-bottom: 25px;
+					input {
+						width: 200px;
+					}
+				}
+			}
+		}
+		&.logos {
+			div.flex {
+				img {
+					height: 100px;
+					width: 100px;
+					margin-right: 30px;
+    				margin-bottom: 30px;
+				}
+			}
+		}
+		&.speakers {
+			.speakers__blocks {
+				div {
+					margin-right: 15px;
+					margin-bottom: 60px;
+					img {
+						height: 170px;
+						width: 170px;
+					}
+				}
+			}
+		}
+		&.tickets.container {
+			min-height: 550px;
+			margin-top: 110px;
+			padding-top: 70px;
+			.row {
+				justify-content: center;
+				flex-wrap: wrap;
+				.ticket {
+					&:first-child {
+						.ticket__body {
+							.ticket__view {
+								.description {
+									margin-bottom: 20px;
+								}
+							}
+						}
+					}
+					margin: 30px 17px;
+					.ticket__body {
+						padding: 15px;
+						height: 390px;
+						.ticket__view {
+							padding: 20px 15px 20px 15px;
+							height: 360px;
+							max-height: 360px;	
+						    justify-content: space-between;
+							.type {
+								font-size: 20px;
+							}
+							img {
+								margin-top: 30px;
+								margin-bottom: 10px;
+							}
+							.date {
+								font-size: 15px;
+								margin-bottom: 10px;
+							}
+							.grn {
+								height: 30px;
+								width: 24px;
+							    position: initial;
+	    						top: -8px;
+							}
+							.description {
+								span {
+									font-size: 16px;
+								}
+							}
+							a {
+								font-size: 18px;
+								padding: 9px 25px;
+								margin: auto;
+								margin-top: 20px;
+								max-width: 200px;
+							}
+						}
+					}
+					.ticket__description {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		
+	}
+}
+@media screen and (max-width: 615px) {
+	section {
+		&.about {
+			.about__blocks {
+				flex-direction: column;
+				div {
+					margin-bottom: 40px;
+					max-width: 100%;
+
+					p {
+						font-size: 21px;
+					}
+					span {
+						max-width: 90%;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		&.speakers {
+			.speakers__blocks {
+				div {
+					margin-bottom: 60px;
+					img {
+						margin-bottom: 0px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		&.schedule__block {
+			margin-top: 0px;
+			min-height: initial;
+			div.container {
+				padding-top: 68px;
+				margin-top: 35px;
+				h3 {
+					padding-top: 30px;
+				}
+				.schedule__list {
+					div {
+						div {
+							margin-bottom: 30px;
+						}
+						h3 {
+							font-size: 19px;
+						}
+						span, .time {
+							font-size: 17px;
+						}
+						.time {
+							display: block;
+							margin-bottom: 20px;
+						}
+					}
+				}
+			}
+		}
+		&.logos {
+			div.flex {
+				img {
+					height: 85px;
+					width: 85px;
+					margin-right: 10px;
+				    margin-bottom: 10px;
+				}
+			}
+		}
+		&.tickets.container {
+			min-height: 550px;
+			margin-top: 70px;
+			padding-top: 70px;
+			.row {
+				justify-content: center;
+				flex-wrap: wrap;
+				.ticket {
+					&:first-child {
+						.ticket__body {
+							.ticket__view {
+								.description {
+									margin-bottom: 20px;
+								}
+							}
+						}
+					}
+					margin: 30px 17px;
+					.ticket__body {
+						padding: 15px;
+						max-height: 450px;
+						height: initial;
+						.ticket__view {
+						    padding: 20px 15px;
+							min-height: 300px;
+						    max-height: 420px;
+						    height: initial;
+							.type {
+								font-size: 20px;
+							}
+							img {
+								margin-top: 30px;
+								margin-bottom: 10px;
+								width: 160px;
+							}
+							.date {
+								font-size: 15px;
+								margin-bottom: 10px;
+							}
+							.grn {
+								height: 30px;
+								width: 24px;
+							    position: initial;
+	    						top: -8px;
+							}
+							.description {
+								span {
+									font-size: 16px;
+								}
+							}
+							a {
+								font-size: 18px;
+								padding: 9px 25px;
+								margin: auto;
+								margin-top: 20px;
+								margin-bottom: 5px;
+								max-width: 200px;
+							}
+						}
+					}
+					.ticket__description {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
